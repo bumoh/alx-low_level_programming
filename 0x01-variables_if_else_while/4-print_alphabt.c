@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
- * main - Prints the alpha in lowercase followed by a new line,except q and e
+ * main - Entry point
  * Return: Always 0
  */
 int main(void)
 {
-char la;
-for (la = 'a'; la <= 'z' la++)
+char c;
+c = 'a';
+while (c <= 'z')
 {
-if (la != 'e' && la != 'q')
-putchar(la);
+if ((c != 'q' || c != 'e') && c <= 'z')
+putchar (c);
+c++;
 }
 putchar('\n');
 return (0);
