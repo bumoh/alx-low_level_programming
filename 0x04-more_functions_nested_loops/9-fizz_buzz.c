@@ -5,30 +5,31 @@
  */
 int main(void)
 {
-int n;
-for (n = 1; n <= 100; n++)
+int p = 100;
+int i;
+i = 1;
+while (i <= p)
 {
-if ((n % 3) == 0 && (n % 5) == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FIZZBUZZ");
+printf("FIZZBUZZ ");
 }
-else if ((n % 3) == 0)
+else if (i % 3 == 0)
 {
-printf("FIZZ");
+printf("FIZZ ";
 }
-else if ((n % 5) == 0)
+else if (i % 5 == 0)
 {
+if (i < p)
+printf("BUZZ ");
+else
 printf("BUZZ");
 }
 else
 {
-printf("%d", n);
+printf("%i ", i);
 }
-if (n == 100)
-{
-continue;
-}
-printf(" ");
+i++;
 }
 printf("\n");
 return (0);
