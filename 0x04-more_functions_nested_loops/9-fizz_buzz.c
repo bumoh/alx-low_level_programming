@@ -6,26 +6,29 @@
 int main(void)
 {
 int n;
-n = 1;
-printf("%d", n);
-for (n = 2; n <= 100; n++)
+for (n = 1; n <= 100; n++)
 {
-if ((n % 3 == 0) && (n % 5 == 0))
+if ((n % 3) == 0 && (n % 5) == 0)
 {
-printf(" FIZZBUZZ");
+printf("FIZZBUZZ");
 }
-else if (n % 3 == 0)
+else if ((n % 3) == 0)
 {
-printf(" FIZZ");
+printf("FIZZ");
 }
-else if (n % 5 == 0)
+else if ((n % 5) == 0)
 {
-printf(" BUZZ");
+printf("BUZZ");
 }
 else
 {
-printf(" %d", n);
+printf("%d", n);
 }
+if (n == 100)
+{
+continue;
+}
+printf(" ");
 }
 printf("\n");
 return (0);
